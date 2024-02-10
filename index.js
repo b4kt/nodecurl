@@ -2,7 +2,7 @@ const express = require('express');
 const multer = require('multer');
 const app = express();
 
-// Hardcoded token for simplicity. In a real application, use environment variables or a more secure storage mechanism.
+//Token (What you should change to change the password). In a real application, use environment variables or a better auth.
 const AUTH_TOKEN = 'your_token';
 
 const storage = multer.diskStorage({
@@ -28,7 +28,7 @@ const checkAuthToken = (req, res, next) => {
     return res.status(403).send('Unauthorized access');
   }
 
-  next(); // Proceed to the next middleware/function if the token matches
+  next(); // goto next middleware/function if the token matches
 };
 
 // Apply the token check globally or to specific routes
