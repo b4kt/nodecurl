@@ -9,6 +9,5 @@ Example upload command for server <br>
 NodeJS
 <br>
 ## NPM Dependencies
-Express
-Multer
+Express, Multer
 
