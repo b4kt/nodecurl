@@ -5,12 +5,10 @@ your_token is what you change to change the login, it can be any plaintext passw
 Example upload command for server <br>
 curl -F "file=@C:\filepath\" -H "Authorization: Bearer your_token" http://example.example:3000/upload
 
-Dependencies
---
+##Dependencies
 |NodeJS|
 <br>
-NPM Dependencies
---
+##NPM Dependencies
 |Express|
 |Multer|
 
